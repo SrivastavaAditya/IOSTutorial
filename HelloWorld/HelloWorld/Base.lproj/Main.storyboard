@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ajf-8b-sTu" userLabel="Backgorund">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSe-4A-Mts" userLabel="FirstButton">
+                                <rect key="frame" x="112.5" y="318.5" width="150" height="30"/>
+                                <state key="normal" title="Sign in with Facebook">
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lki-UD-2XW" userLabel="SecondButton">
+                                <rect key="frame" x="121.5" y="358.5" width="132" height="30"/>
+                                <state key="normal" title="Sing in with Google">
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kMk-se-V5Y" userLabel="ThirdButton">
+                                <rect key="frame" x="127.5" y="398.5" width="120" height="30"/>
+                                <state key="normal" title="Sign in with Email">
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login or create an account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43j-rN-hxj">
+                                <rect key="frame" x="85.5" y="277.5" width="204" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Social Squid" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WnB-9v-Ojk">
+                                <rect key="frame" x="138" y="166.5" width="99" height="91"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ajf-8b-sTu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="30y-qi-pdt"/>
+                            <constraint firstItem="Ajf-8b-sTu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3qP-cI-xXQ"/>
+                            <constraint firstItem="lki-UD-2XW" firstAttribute="top" secondItem="LSe-4A-Mts" secondAttribute="bottom" constant="10" id="99Y-ja-dQP"/>
+                            <constraint firstItem="43j-rN-hxj" firstAttribute="top" secondItem="WnB-9v-Ojk" secondAttribute="bottom" constant="20" id="EeZ-20-6LW"/>
+                            <constraint firstItem="kMk-se-V5Y" firstAttribute="top" secondItem="lki-UD-2XW" secondAttribute="bottom" constant="10" id="I7D-T0-7Wu"/>
+                            <constraint firstAttribute="bottom" secondItem="Ajf-8b-sTu" secondAttribute="bottom" id="Kek-75-h6w"/>
+                            <constraint firstItem="WnB-9v-Ojk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OzT-8P-gk6"/>
+                            <constraint firstItem="LSe-4A-Mts" firstAttribute="top" secondItem="43j-rN-hxj" secondAttribute="bottom" constant="20" id="XK6-dl-OxS"/>
+                            <constraint firstItem="LSe-4A-Mts" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="chd-Dh-9fi"/>
+                            <constraint firstAttribute="trailing" secondItem="Ajf-8b-sTu" secondAttribute="trailing" id="hTY-Mg-DoY"/>
+                            <constraint firstItem="43j-rN-hxj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iBX-jK-T13"/>
+                            <constraint firstItem="kMk-se-V5Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jpo-iF-YeY"/>
+                            <constraint firstItem="LSe-4A-Mts" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kDp-0b-mwH"/>
+                            <constraint firstItem="lki-UD-2XW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zRj-Kl-RAz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
